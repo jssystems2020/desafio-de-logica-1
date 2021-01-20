@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Cáculo de IMC </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+ 
+</head>
+<body>
+    <script>
+    var nome = prompt("Digite o name:");
+    var peso = prompt("Digite o peso:");
+    var altura = prompt("Digite a altura:");
+    var imcResut = parseFloat(peso) / (parseFloat(altura) * parseFloat(altura) );    
+
+    function imc() {
+        if(imcResut > 20 && imcResut < 22 ){
+            condicao = "fitness";   
+        }else if(imcResut > 22 && imcResut < 42){
+            condicao = "sarado";
+        }else {
+            condicao = "fofinho";
+        }
+        alert("Seu IMC é : " + imcResut.toFixed(2) + condicao);  
+    }    
+    </script> 
+
+    <input type="button" onclick="imc();" value="Cálcular">
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Números Pares e Impares</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+ 
+</head>
+<body>
+    <script>
+    var par = " PAR ";
+    var impar = " IMPAR ";    
+    var num1 = prompt("Digite o primeiro número :");
+    var num2 = prompt("Digite o segundo número :");
+    var num3 = prompt("Digite o terceiro número :");
+    var contapar = 0;
+    var contaimpar = 0;
+    var resutado = parseInt(num1) + parseInt(num2) + parseInt(num3);    
+
+    function executar() {
+        if ( num1%2 == 0 ){ 
+            alert(" Primeira entrada : " + num1 + "\n " + par); 
+            contapar++;    
+        }else{
+            alert(" Primeira entrada : " + num1 + "\n "  + impar);
+            contaimpar++;
+        }
+        if ( num2%2 == 0 ){
+            alert( " Segunda entrada : " + num2 + "\n "  + par);
+            contapar++; 
+        }else{
+            alert( " Segunda entrada : " + num2 + "\n "  + impar);
+            contaimpar++; 
+        }
+        if ( num3%2 == 0 ){
+            alert(" Terceira entrada : " + num3 + "\n "  + par);
+            contapar++; 
+        }else{
+            alert(" Terceira entrada : " + num3 + "\n "  + impar);
+            contaimpar++; 
+        }  
+        
+        alert(" Quantidade de número Par = " + contapar + " \n Quantidade de número Impar = " + contaimpar);
+
+    }    
+    </script> 
+
+    <input type="button" onclick="executar();" value="Cálcular">
+
+</body>
+</html>
